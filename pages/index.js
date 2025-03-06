@@ -14,12 +14,14 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="flex flex-col items-center justify-center text-center py-32 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-        <h2 className="text-5xl font-extrabold">Servicios Exclusivos para Familias Extranjeras</h2>
-        <p className="text-xl mt-4 max-w-2xl">
-          Asesoramiento en educación, lifestyle, hogar y gestión patrimonial en España con un toque de exclusividad.
-        </p>
-        <Link href="/contact" className="mt-6 px-8 py-4 bg-white text-blue-600 font-bold rounded-full shadow-lg hover:bg-gray-100 transition-all">Contáctanos</Link>
+      <section className="relative flex flex-col items-center justify-center text-center py-32 bg-cover bg-center text-white" style={{backgroundImage: "url('/hero.jpg')"}}>
+        <div className="bg-black bg-opacity-50 p-8 rounded-lg">
+          <h2 className="text-5xl font-extrabold">Servicios Exclusivos para Familias Extranjeras</h2>
+          <p className="text-xl mt-4 max-w-2xl">
+            Asesoramiento en educación, lifestyle, hogar y gestión patrimonial en España con un toque de exclusividad.
+          </p>
+          <Link href="/contact" className="mt-6 px-8 py-4 bg-white text-blue-600 font-bold rounded-full shadow-lg hover:bg-gray-100 transition-all">Contáctanos</Link>
+        </div>
       </section>
     </div>
   );
