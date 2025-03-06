@@ -4,23 +4,23 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
-      <header className="bg-white shadow-md p-6 flex justify-between items-center fixed top-0 w-full z-50">
-        <h1 className="text-3xl font-extrabold text-gray-800 tracking-wide">Aurum Family Services</h1>
-        <nav className="space-x-6">
-          <Link href="/education" className="text-gray-700 hover:text-blue-600 text-lg">Educación</Link>
-          <Link href="/lifestyle" className="text-gray-700 hover:text-blue-600 text-lg">Lifestyle</Link>
-          <Link href="/home-design" className="text-gray-700 hover:text-blue-600 text-lg">Hogar & Diseño</Link>
-          <Link href="/contact" className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Contacto</Link>
+      <header className="bg-white shadow-lg p-6 flex justify-between items-center fixed top-0 w-full z-50">
+        <h1 className="text-4xl font-extrabold text-gray-800 tracking-wide">Aurum Family Services</h1>
+        <nav className="space-x-8 text-lg">
+          <Link href="/education" className="text-gray-700 hover:text-gold-600 transition duration-300">Educación</Link>
+          <Link href="/lifestyle" className="text-gray-700 hover:text-gold-600 transition duration-300">Lifestyle</Link>
+          <Link href="/home-design" className="text-gray-700 hover:text-gold-600 transition duration-300">Hogar & Diseño</Link>
+          <Link href="/contact" className="text-white bg-gold-600 hover:bg-gold-700 px-5 py-2 rounded-lg shadow-lg transition duration-300">Contacto</Link>
         </nav>
       </header>
 
-      <section className="relative flex flex-col items-center justify-center text-center py-32 bg-cover bg-center text-white" style={{backgroundImage: "url('/hero.jpg')"}}>
-        <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-          <h2 className="text-5xl font-extrabold">Servicios Exclusivos para Familias Extranjeras</h2>
-          <p className="text-xl mt-4 max-w-2xl">
-            Asesoramiento en educación, lifestyle, hogar y gestión patrimonial en España con un toque de exclusividad.
+      <section className="relative flex flex-col items-center justify-center text-center py-40 bg-cover bg-center text-white" style={{backgroundImage: "url('/luxury-hero.jpg')"}}>
+        <div className="bg-black bg-opacity-50 p-10 rounded-lg shadow-xl">
+          <h2 className="text-6xl font-extrabold">Servicios Exclusivos para Clientes de Alto Nivel</h2>
+          <p className="text-2xl mt-6 max-w-3xl">
+            Gestión premium en educación, lifestyle, hogar y asesoramiento patrimonial en España.
           </p>
-          <Link href="/contact" className="mt-6 px-8 py-4 bg-white text-blue-600 font-bold rounded-full shadow-lg hover:bg-gray-100 transition-all">Contáctanos</Link>
+          <Link href="/contact" className="mt-8 px-10 py-4 bg-gold-600 text-white font-bold rounded-full shadow-lg hover:bg-gold-700 transition duration-300">Contáctanos</Link>
         </div>
       </section>
     </div>
